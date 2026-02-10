@@ -2,95 +2,116 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-        body {
-            background-color: #ffee8c;
-            color: #442703;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    body {
+      background-color: #ffee8c;
+      color: #442703;
+      margin: 0;
+      line-height: 1.5;
+    }
 
-        .center-iframe {
-            display: block;
-            margin: 0 auto;
-            /* 0 for vertical margin, auto for horizontal centering */
-            width: 70%;
-            /* Example width, must not be 100% */
-        }
-        #header {
-            background-color: rgba(148, 90, 18, 0.651)
-            
-        }
-          .button {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  color: #000000;
-  background-color: #fff;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #ffdb5871;
-}
-.button:active {
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-    </style>
+    #header {
+      background-color: rgba(148, 90, 18, 0.65);
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .center-iframe {
+      display: block;
+      margin: 0 auto 30px auto;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      background-color: #fff;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 9px #ffdb5871;
+      margin: 20px 0;
+    }
+
+    .button:active {
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    @media (min-width: 768px) {
+      .button {
+        font-size: 1.3rem;
+        padding: 15px 25px;
+      }
+    }
+
+    ol.lead li {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
-    <section id="header">
-        <div class="container">
-            <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"> 
-                <h1>AKO NALANG KASI :(( </h1>
-            </header>
+  <!-- Header -->
+  <section id="header">
+    <h1>AKO NALANG KASI :((</h1>
+  </section>
+
+  <!-- Spotify Embed -->
+  <iframe class="center-iframe" data-testid="embed-iframe"
+    src="https://open.spotify.com/embed/track/2aL4lMGhWdPpyPL6COPou7?utm_source=generator" height="352"
+    frameborder="0" allowfullscreen=""
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+  <!-- Content Section -->
+  <section id="list">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <!-- Images Column -->
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="Pompompurin-PNG-Pic.png" alt="fallingpom">
+          <img src="Pompompurin-PNG-HD-Image.png" alt="cupidpom">
+          <img src="Pompompurin-Transparent.png" alt="ploppom">
         </div>
-    </section>
 
-    <iframe class="center-iframe" data-testid="embed-iframe" style="border-radius:12px"
-        src="https://open.spotify.com/embed/track/2aL4lMGhWdPpyPL6COPou7?utm_source=generator" width="600" height="352"
-        frameBorder="0" allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <!-- Text Column -->
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">100 Reasons kung bakit ako nalang kasi and 1 reason why not ヾ(●ω●)ノ</h1>
 
-    <section id="list">
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="Pompompurin-PNG-Pic.png" class="d-block mx-lg-auto img-fluid"
-                        alt="fallingpom" width="700" height="500" loading="lazy">
-
-                    <img src="Pompompurin-PNG-HD-Image.png"
-                        class="d-block mx-lg-auto img-fluid" alt="cupidpom" width="700" height="500" loading="lazy">
-
-                    <img src="Pompompurin-Transparent.png" class="d-block mx-lg-auto img-fluid"
-                        alt="ploppom" width="700" height="500" loading="lazy">
-
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">100 Reasons kung bakit ako nalang kasi
-                        and 1 reason why not ヾ(●ω●)ノ</h1>
-                    <ol class="lead">
-                        <li>I laugh at my own jokes so you don't have too...</li>
-                        <li>My Spotify playlists are basically masterpieces.</li>
-                        <li>Ako na toh eh ❤❤❤</li>
-                        <li>Bakit hindi ako diba?</li>
-                        <li>Haven't lost to rock-paper-scissors </li>
-                        <li>Lit' have an unlimited aura</li>
-                        <li>Lagi akong napasok hehe ❤ (100% true) </li>
-                        <li>Mas magaling pako sa papa mo mag dad jokes</li>
-                        <li>I know how to pet cats without getting scratched.</li>
-                        <li>May pusa ako ❤</li>
-                        <li>Magaling mag roblox (true)</li>
+          <ol class="lead">
+            <li>I laugh at my own jokes so you don't have too...</li>
+            <li>My Spotify playlists are basically masterpieces.</li>
+            <li>Ako na toh eh ❤❤❤</li>
+            <li>Bakit hindi ako diba?</li>
+            <li>Haven't lost to rock-paper-scissors </li>
+            <li>Lit' have an unlimited aura</li>
+            <li>Lagi akong napasok hehe ❤ (100% true) </li>
+            <li>Mas magaling pako sa papa mo mag dad jokes</li>
+            <li>I know how to pet cats without getting scratched.</li>
+            <li>May pusa ako ❤</li>
+             <li>Magaling mag roblox (true)</li>
                         <li>I can solve a rubrik cube (baklas version)</li>
                         <li>Personal ragebaiter mo</li>
                         <li>I have elite taste (trust me).</li>
@@ -180,17 +201,20 @@
                         <li>Sasabayan ka umuwi ( if you want （◞‸◟) )</li>
                         <li>May pusa ako ❤</li>
                         <li>Ayaw mo ba?</li>
-                    </ol>
-                    <ol class="lead">
-                        <li>Ayaw mo sakin ಠ_ಠ</li>
-                    </ol>
-                     <form action="hehe.html">
+          </ol>
+
+          <ol class="lead">
+            <li>Ayaw mo sakin ಠ_ಠ</li>
+          </ol>
+
+          <!-- Back Button -->
+          <form action="hehe.html">
             <button class="button">Back</button>
-        </form>
-                </div>
-            </div>
+          </form>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
